@@ -1,0 +1,10 @@
+---
+layout: layout.liquid
+---
+{{ content }}
+<p class="bg-light my-5 px-3 py-2">
+Tags: 
+{% for tag in tags %}
+    <a href="/tags/{{ tag }}">{{ tag }}</a>
+{% endfor %}
+</p>
